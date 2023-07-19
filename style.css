@@ -1,11 +1,16 @@
 body{margin:0;padding:0;font-family: work sans;}
-section{max-width:1440px;margin:auto;}
+section{max-width:1440px;margin:auto;width: 75%;}
 
 /* header style sheet */
 header {
     max-width: 1440px;
     margin: auto;
+    
+    
 }
+.lgc,.box-bar-top span{background: linear-gradient(360deg,#0522ffd9, #ff1b64f5);
+color: transparent;
+-webkit-background-clip: text;}
 nav {
     max-width: 75%;
     margin: auto;
@@ -66,3 +71,336 @@ li.follow-us i:last-child {
 nav ul li:last-child {
     margin-left: 20px;
 }
+@media screen and (max-width:576px){
+    nav{flex-direction: column;}
+    nav ul{flex-direction: column;padding-left: 0;}
+    nav ul li:nth-child(2){margin-top:12%;margin-bottom: 15%;}
+}
+
+/* sing in bar styles */
+section.gamer-bar.sing-in-bar {
+    background: #fff9fc;
+}
+.sing-in-bar-text{background-image: url(Group\ 14.png);}
+section.sing-in-bar {
+    display: flex;
+    width: 1250px;
+}
+
+.sing-in-img img {
+    width: 68%;
+}
+.sing-in-img {margin-left: 5%;}
+
+.sing-in-bar-text h4 {
+    padding-left: 30%;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #454545;
+    margin-top: 15%;
+}
+
+.sing-in-bar-text h2 {
+    background: linear-gradient(360deg,#0522ffd9, #ff1b64f5);
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 50px;
+    font-weight: 800;
+    margin: -1% 0;
+    margin-left: 30%;
+}
+.sing-in-bar-text {
+    width: 50%;
+    background-size: cover;
+}
+
+.sing-in-bar-text p {
+    margin-left: 30%;
+    font-size: 15px;
+    color: #404040;
+}
+button.primary-btn {
+    border: none;
+    padding: 16px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 33px;
+    color: white;
+    background: #ff42a5;
+}button.primary-btn.btn-one {
+    margin-left: 30%;
+    margin-right: 4%;
+}
+
+button.primary-btn.btn-two {
+    background: #4ec5f7;
+}
+@media screen and (max-width:576px){button.primary-btn {
+    padding: 10px;
+    font-size: 10px;
+}
+    .sing-in-bar{flex-direction:column-reverse;}
+    .sing-in-img{margin-left: 0;width: 300px;margin:auto;text-align: center;}
+    .sing-in-bar-text h2{margin-left:0;padding-left: 0;text-align: center;font-size: 37px;}
+    .sing-in-bar-text h4{margin-left: 0;padding-left: 0;font-size: 22px;text-align: center;}
+    .sing-in-bar-text p{margin-left: 0;padding-left: 0;text-align: center;font-size: 13px;margin: 19px 0;}
+    button.primary-btn.btn-one{margin:0;text-align: center;margin-left: 30%;/* padding: 4%; */margin-bottom:40px}
+    sing-in-bar{width: 300px;margin: auto;}
+    section.sing-in-bar{width: 300px;}
+    .sing-in-bar-text {
+        width: 100%;
+        background-size: cover;}
+        .sing-in-img img {
+            margin: auto;
+            width: 280px;}
+    .sing-in-img img {
+    margin: auto;
+    width: 300px;}
+
+}
+
+/* gamer section style */
+.sing-in-img.gamer-bar-img {
+    margin-left: 6%;
+}
+
+.sing-in-img.gamer-bar-img img {
+    width: 90%;
+}
+
+.sing-in-bar-text.gamer-bar-t {
+    background: none;
+}
+
+.sing-in-bar-text.gamer-bar-t h2 {
+    margin-left: 60px;
+    font-size: 35px;
+    margin-top: 12%;
+}
+.sing-in-bar-text.gamer-bar-t p {
+    margin-left: -49px;
+    width: 70%;
+    text-align: end;
+    font-size: 76%;
+    padding: 3% 0;
+}.gamer-bar-t.sing-in-bar-text h5 {margin-top:4%;margin-bottom: 1%;
+    text-align: end;
+    font-weight: 500;
+    width: 59%;
+     font-size: 22px; 
+    color: gray;
+    padding: 0;
+}.gamer-bar-t.sing-in-bar-text h6 {
+    font-size: 23px;
+    margin-top: 2%;
+    text-align: end;
+    font-weight: 700;
+    width: 85%;
+    margin-left: -25%;
+    color: #000000db;
+}
+
+@media screen and (max-width:576px){
+    .sing-in-bar-text.gamer-bar-t h2 {
+    margin-left: 0px;
+    font-size: 25px;
+    margin-top: 12%;}
+    .sing-in-bar-text.gamer-bar-t p {
+        /* margin-left: -70px; */
+        width: 70%;
+        text-align: center;
+        font-size: 76%;
+        padding: 8% 0;
+        margin: auto;}
+        .gamer-bar-t.sing-in-bar-text button {
+            margin-left: 37%;
+        }
+        .sing-in-img.gamer-bar-img {
+            margin-left: 0%;
+        }.sing-in-img.gamer-bar-img img {
+            width: 100%
+    }.gamer-bar-t.sing-in-bar-text h5 {margin-top:4%;margin-bottom: 1%;
+        text-align: end;
+        font-weight: 400;
+        width: 85%;
+         font-size: 15px; 
+        color: gray;
+        padding: 0;
+    }.gamer-bar-t.sing-in-bar-text h6 {
+        font-size: 16px;
+        margin-top: 2%;
+        text-align:center;
+        font-weight: 600;
+        width: 100%;
+        margin-left:0%;
+        color: #000000db;
+    }
+}
+/* four box */
+.box-bar-top {
+    text-align: center;
+    color: #454545;
+    margin-top: 7%;
+}
+
+.box-bar-top h2 {
+    font-size: 31px;
+}
+
+.box-bar-top p {
+    font-size: 13px;
+    margin: -5px 0;
+}
+.box-container {
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    gap: 1.5%;
+    font-size: 15px;
+    color: #3b3b3b;
+    align-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.box {
+    /* margin: auto; */
+    position: relative;
+    width: 230px;
+    height: 323px;
+}
+.box img {
+    width: 100%;
+}
+.box p {
+    width: 95%;
+    margin: 10px auto;
+}
+.boxthree h6 {
+    position: absolute;
+    top: 33%;
+    font-size: 20px;
+    color: #ff40ec;
+    left: 22%;
+}
+
+.boxthree i {
+    position: absolute;
+    top: 29%;
+    left: 39%;
+    font-size: 22px;
+    color: white;
+    background: black;
+    border-radius: 100%;
+    padding: 14px;
+    text-align: center;
+}.boxone {height: 264px;}
+
+.boxtwo {
+    height: 264px;
+}
+
+.boxthree {
+    height: 264px;
+    background-image: linear-gradient(rgb(0 0 0 / 43%), rgb(0 0 0 / 46%)),url(Rectangle7.png);
+    width: 100%;
+    background-size: cover;
+    border-radius: 9px;
+}
+
+.boxfour {
+    height: 264px;
+}
+
+@media screen and (max-width:576px){
+    .box-container{flex-direction: column;align-items: center;}
+    .box{margin-bottom:40px;}
+}
+
+/* install related styles */
+section.install {
+    display: flex;
+    padding: 50px 0;
+}
+
+
+.install-img-box img {
+    width: 100%;
+    position: relative;
+}
+
+.install-img-box img:last-child {
+    width: 60%;
+    position: absolute;
+    bottom: -43px;
+    left: -116px;
+}
+
+.install-img-box {
+    position: relative;
+    width: 550px;
+}
+
+.install-text {
+    padding: 80px 0;
+}
+
+.install-text h2 {
+    font-size: 31px;
+    color: #e04cc0;
+    width: 42%;
+    margin: auto;
+}
+
+.install-text h2 span {
+    color: #1d1d1d;
+}
+
+.install-text p {
+    font-size: 15px;
+    color: #656565;
+    width: 42%;
+    margin: auto;
+    margin-top: 22px;
+}
+
+@media screen and (max-width:576px){
+    section.install {
+        flex-direction: column;
+        padding: 30px 0;}
+        .install-text h2 {
+            font-size: 25px;
+            width: 85%;}
+            .install-text p {text-align: center;
+                 width:100%}.install-text{padding:0}
+    .install-img-box img:last-child {
+                    width: 50%;
+                    bottom: -38px;
+                    left: -58px;}
+    .install-img-box {   width: 85%;
+                        margin: auto;margin-top:40px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

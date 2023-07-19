@@ -379,28 +379,59 @@ section.install {
                     left: -58px;}
     .install-img-box {   width: 85%;
                         margin: auto;margin-top:40px
+}}
+
+/* circle section styles*/
+.circleone {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 32px 0;
+    margin-top: 30px;
+}
+.circletwo {padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
 }
 
+.circle-box {
+    border-radius: 37px;
+    background: white;
+   
+    box-shadow: 3px 4px 19px #0000003b;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
 
+.circle-box img {
+    width: 36px;
+}
 
+.circle-box p {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    padding: 3px 15px;
+}.circle-box img {
+    width: 46px;
+}.colerful{color:pink}
+@media screen and (max-width:576px){
+    .hide{display: none;}
+    .circle-box {padding: 1px;}
+    .circle-box p {
+        text-align: center;
+        font-size: 5px;
+        font-weight: 600;
+        color: black;
+        padding: 7px 5px;}.circle-box img {
+            width: 30px;
+        }.circletwo {padding-bottom: 20px;}
+}.circle-box.colerful p {
+    color: #ff6b6b;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.circle-box.colerful {
+    border: 2px solid #ffa3b3;
+}

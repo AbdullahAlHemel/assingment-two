@@ -1,5 +1,5 @@
 body{margin:0;padding:0;font-family: work sans;}
-section{max-width:1440px;margin:auto;width:1110px;}
+section{max-width:1440px;margin:auto;}
 
 /* header style sheet */
 header {
@@ -72,6 +72,7 @@ li.follow-us i:last-child {
 nav ul li:last-child {
     margin-left: 20px;
 }
+
 @media screen and (max-width:576px){
     nav{flex-direction: column;}
     nav ul{flex-direction: column;padding-left: 0;}
@@ -341,9 +342,9 @@ section.install {
     left: -116px;
 }
 
-.install-img-box {
+.install-img-box {margin-right: 55px;
     position: relative;
-    width: 550px;
+    width: 530px;
 }
 
 .install-text {
@@ -353,7 +354,7 @@ section.install {
 .install-text h2 {
     font-size: 31px;
     color: #e04cc0;
-    width: 42%;
+    width: 38%;
     margin: auto;
 }
 
@@ -364,12 +365,15 @@ section.install {
 .install-text p {
     font-size: 15px;
     color: #656565;
-    width: 42%;
+    width: 38%;
     margin: auto;
     margin-top: 22px;
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px){.install-img-box img {
+    width: 90%;
+    position: relative;
+}
     section.install {
         flex-direction: column;
         padding: 30px 0;}
@@ -377,13 +381,14 @@ section.install {
             font-size: 25px;
             width: 85%;}
             .install-text p {text-align: center;
-                 width:100%}.install-text{padding:0}
+                 width:100%}.install-text{padding:0;width: 68%;margin: auto;}
     .install-img-box img:last-child {
-                    width: 50%;
-                    bottom: -38px;
-                    left: -58px;}
+                    width: 41%;
+                    bottom: -36px;
+                    left: -50px;
+                    }
     .install-img-box {   width: 85%;
-                        margin: auto;margin-top:40px
+                        margin: auto;margin-top:40px; margin-left: 68px;
 }}
 
 /* circle section styles*/section.circle {
@@ -450,7 +455,7 @@ section.install {
     margin: auto;
     color: #ffffff;
     background: black;
-    padding: 55px 0;
+    padding: 48px 61px;
 }
 
 ul.options {
@@ -496,4 +501,69 @@ footer p {
 
 .circle-box:hover {
     box-shadow: 1px 1px 15px #efa2a2;
+}
+@media screen and (max-width:576px){.install-img-box img {
+    width: 80%}
+    section { width:350px; }
+    .option li{grid-area: a;}
+    .footer{width: 400px;}ul.logobtm li{width: 300px;}ul.options li{
+    margin-bottom: 9px;
+}
+    ul.options{width: 170px;margin:auto;flex-direction: column;}ul.termsbtm li{padding:0}
+    ul .options li{padding:0;}
+        ul.logobtm li { width: 10px;}
+        ul.logobtm {
+            width: 90%;
+            font-size: 30px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 0;
+            margin: 0;
+            gap: 10%;
+            margin-left: 10%;}
+            ul.termsbtm{margin-left: -25PX;}
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+   header{ width:960px;}section.sing-in-bar{width:960px}.sing-in-bar-text {width: 76%;}
+   .sing-in-bar-text.gamer-bar-t h2 { margin-left: 0;}
+   ul.options{width: 600px;}
+   ul.logobtm {
+    width: 90%;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0;
+    margin: 0;
+    gap: 10%;
+    margin-left: 10%;}
+    ul.termsbtm{margin-left: -25PX;}
+    section{width:960px};
+    footer {
+        max-width: 1440px;
+        margin: auto;
+        color: #ffffff;
+        background: black;
+        padding: 38px 41px;
+        width: 100%;
+
+    }
+    .HIDEP{display: none;}
+    .box-container{width:70%}
+    .box-container{height:80%}
+    .boxthree{height:190px;margin-bottom: 25%;}
+    .box p {
+        width: 95%;
+        margin-top: -50px;
+        font-size: 11px;
+    }.box .brk-p {  margin-top:-15px;}
+    section.circle {
+        padding: 40px 0;
+        width: 90%;
+    }.install-img-box img {
+        width: 80%;}.install-img-box img:last-child {
+            width: 50%;
+            position: absolute;
+            bottom: 11px;
+            left: -93px;}
+
 }
